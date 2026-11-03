@@ -8,7 +8,7 @@ header { display:flex; align-items:center; justify-content:space-between; gap:12
 .brand img { width:36px; height:36px; border-radius:9px; }
 .langs a { color:var(--muted); text-decoration:none; margin-left:12px; font-size:15px; }
 .langs a.on { color:var(--moss); font-weight:700; }
-h1 { font-size:34px; line-height:1.2; margin:0 0 12px; }
+h1 { font-size:clamp(26px, 7vw, 34px); line-height:1.2; margin:0 0 12px; overflow-wrap:anywhere; hyphens:auto; }
 h2 { font-size:21px; margin:32px 0 8px; }
 a { color:var(--moss); }
 .hero { text-align:center; padding:24px 0 8px; }
@@ -20,6 +20,7 @@ a { color:var(--moss); }
 .card h3 { margin:6px 0 4px; font-size:17px; }
 .card p { margin:0; color:var(--muted); font-size:15px; }
 .doc { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:8px 28px 24px; }
+@media (max-width:520px) { .doc { padding:4px 18px 18px; } h2 { font-size:19px; } }
 .doc ul { padding-left:22px; }
 footer { margin-top:48px; color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:8px 18px; }
 footer a { color:var(--muted); }
